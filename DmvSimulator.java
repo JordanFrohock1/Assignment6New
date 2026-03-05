@@ -37,7 +37,7 @@ public class DmvSimulator {
 
 
         System.out.println("Now serving number " + userNumber);
-        System.out.println("Sir are you stupid, you forgot one of the 100 documents you needed, you need to leave.");
+        System.out.println("Sir are you stupid, you forgot one of the 100 documents you needed, you need to leave. Muahaha!");
     }
 
 }
