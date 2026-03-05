@@ -20,7 +20,7 @@ public class DmvSimulator {
         int currentNumber = userNumber + 1;
 
 
-        if (currentNumber > 100) {
+        if (currentNumber > 200) {
             currentNumber = 1;
         }
 
@@ -30,14 +30,21 @@ public class DmvSimulator {
             currentNumber++;
 
 
-            if (currentNumber > 100) {
+            if (currentNumber > 200) {
                 currentNumber = 1;
             }
         }
 
 
         System.out.println("Now serving number " + userNumber);
-        System.out.println("Sir are you stupid, you forgot one of the 100 documents you needed, you need to leave.");
+        
+        int miracleChance = random.nextInt(100) + 1;
+        if(miracleChance == 1) {
+            System.out.println("You actually managed to have all the right paperwork, i didn't know that was possible");
+        } else {
+             System.out.println("Sir are you stupid, you forgot one of the 100 documents you needed, you need to leave.");
+        }
+
     }
 
 }
